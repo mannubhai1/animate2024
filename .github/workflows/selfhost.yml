@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Install yarn
         run: |
-          npm run install-yarn-package
+          npm install yarn
           yarn run yarn-install --frozen-lockfile
       - name: Checkout your repository using git
         uses: actions/checkout@v3
