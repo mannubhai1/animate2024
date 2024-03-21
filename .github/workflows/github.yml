@@ -15,12 +15,12 @@ permissions:
   id-token: write
 jobs:
   build:
-    runs-on: animate2024
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-      - name: Setup yarn
-        run:  npm install yarn --unsafe-perm=true --allow-root
+      - name: Run test in sub-folder
+        uses: borales/actions-yarn@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v2
       - name: Create folder
