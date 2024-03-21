@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v3        
       - name: Run test in sub-folder
         uses: borales/actions-yarn@v4
+        with:
+          cmd: install
       - name: Install, build, and upload your site
         uses: withastro/action@v2
       - name: Create folder
