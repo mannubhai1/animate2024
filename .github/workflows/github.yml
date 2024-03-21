@@ -15,7 +15,7 @@ permissions:
   id-token: write
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: animate2024
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
@@ -29,4 +29,4 @@ jobs:
         uses: withastro/action@v2
       - name: Create folder
         run: |
-          cp -R dist /home/github/animate2024.fossee.in/prod
+          mkdir -p /home/github/animate2024.fossee.in/prod && cp -R dist /home/github/animate2024.fossee.in/prod
