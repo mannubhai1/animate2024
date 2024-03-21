@@ -1,21 +1,21 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
-# Trigger the workflow on push and
-# pull request events on the main branch
 on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: ["main"]
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
-    runs-on: wcag
+  build:
+    runs-on: self-hosted
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
