@@ -1,5 +1,4 @@
 [
- 
   { "label": "About", "href": "/about" },
   { "label": "Theme", "href": "/theme" },
   { "label": "Register", "href": "/register" },
@@ -9,5 +8,5 @@
   { "label": "Webinar", "href": "/webinar" },
   { "label": "Partners", "href": "/partners" },
   { "label": "Contact", "href": "/contact" },
-  {"label": "FAQs", "href": "/contact#faq"}
+  { "label": "FAQs", "href": "/contact#faq" }
 ]

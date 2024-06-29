@@ -1,0 +1,11 @@
+---
+---
+
+- The same person cannot participate in more than one team.
+- If a person is found participating in more than one team, both teams will be disqualified from the Hackathon.
+- Use ONLY Synfig Studio for creating animations. Create the supporting graphics, audio, etc. using only open source software. You are not allowed to use any proprietary software in your animation in any aspect. If found, you or your team will be disqualified.
+- You can choose to narrate in **English** or in the **22 scheduled Indian languages** given below.
+  - _(1) Assamese, (2) Bengali, (3) Gujarati, (4) Hindi, (5) Kannada, (6) Kashmiri, (7) Konkani, (8) Malayalam, (9) Manipuri, (10) Marathi, (11) Nepali, (12) Oriya, (13) Punjabi, (14) Sanskrit, (15) Sindhi, (16) Tamil, (17) Telugu, (18) Urdu, (19) Bodo, (20) Santhali, (21) Maithili, and (22) Dogri_.
+- The team lead will be the only point of contact with the organizers. Any participant found to be indulging in any form of malpractice will be immediately disqualified.
+- The decision of the review committee and organizers in declaring the results will be final. No queries in this regard will be entertained.
+- The accepted submissions shall be released and published under open source license in the public domain. The copyright should be transferred to the FOSSEE project.

@@ -1,16 +1,14 @@
 ---
 import navLinks from "./nav-links.json";
-import regi from '../images/btn-01-a.png';
-import { slide } from 'astro:transitions';
-import theme from '../images/btn-02-a.png';
-import guide from '../images/btn-03-a.png';
-import result from '../images/btn-04-a.png';
-import logo from '../images/Logo-Animate.png';
-import fos from '../images/fossee-logo.png';
-import iit from '../images/IITB-logo.png';
+import regi from "../images/btn-01-a.png";
+import { slide } from "astro:transitions";
+import theme from "../images/btn-02-a.png";
+import guide from "../images/btn-03-a.png";
+import result from "../images/btn-04-a.png";
+import logo from "../images/Logo-Animate.png";
+import fos from "../images/fossee-logo.png";
+import iit from "../images/IITB-logo.png";
 ---
-
-
 
 <div class="relative">
   <!-- <div id="lightbox" aria-label="lightbox" tab-index="0" role="button"
@@ -22,30 +20,55 @@ import iit from '../images/IITB-logo.png';
       id="sidebar"
       class="lg:block hidden fixed z-30 inset-0 transition-all duration-300 w-[25rem] py-4 px-0 justify-center pt-4"
       style="background:#f70000;"
-      
-    
     >
       <!-- style="background: linear-gradient(180deg, rgb(255, 30, 30) 0%, rgb(216, 7, 38) 65%, rgb(255, 59, 108) 100%)""bg-gradient-to-bl from-rose-700 via-red-500 to-rose-500 -->
-    <div class="flex flex-row px-2" style="background-color:#fff8dd" data-astro-cid-mmggtga4="">
-    <div class="flex items-start w-1/2 float-start" data-astro-cid-mmggtga4="">
-    <a href="https://www.iitb.ac.in/" target="_blank">
-    <img src={iit.src} alt="iitb" decoding="async" data-astro-cid-mmggtga4=""
-    style="width: 150px;">
-    </a>
-    </div>
-    <div class="flex items-end justify-end float-right w-1/2" data-astro-cid-mmggtga4="">
-    <a href="https://fossee.in" target="_blank">
-    <img class=" float-right" src={fos.src} alt="fossee" decoding="async" data-astro-cid-mmggtga4="" 
-    style="width: 150px;">
-    </a>
-    </div>
-    </div>
-
-      <div class="px-5 pt-7 flex flex-row align-items-center justify-center pb-2">
-        
-        <img  src={logo.src} style="width: 85%;" alt="ANIMATE 2024" decoding="async" />
+      <div
+        class="flex flex-row px-2"
+        style="background-color:#fff8dd"
+        data-astro-cid-mmggtga4=""
+      >
+        <div
+          class="flex items-start w-1/2 float-start"
+          data-astro-cid-mmggtga4=""
+        >
+          <a href="https://www.iitb.ac.in/" target="_blank">
+            <img
+              src={iit.src}
+              alt="iitb"
+              decoding="async"
+              data-astro-cid-mmggtga4=""
+              style="width: 150px;"
+            />
+          </a>
+        </div>
+        <div
+          class="flex items-end justify-end float-right w-1/2"
+          data-astro-cid-mmggtga4=""
+        >
+          <a href="https://fossee.in" target="_blank">
+            <img
+              class="float-right"
+              src={fos.src}
+              alt="fossee"
+              decoding="async"
+              data-astro-cid-mmggtga4=""
+              style="width: 150px;"
+            />
+          </a>
+        </div>
       </div>
-   
+
+      <div
+        class="px-5 pt-7 flex flex-row align-items-center justify-center pb-2"
+      >
+        <img
+          src={logo.src}
+          style="width: 85%;"
+          alt="ANIMATE 2024"
+          decoding="async"
+        />
+      </div>
+
       <!-- <div class="row-span-1 pt-4 flex items-center justify-center"><ul>
         <li class="text-red-300"><a href="/register" class="flex-1 border-indigo-600 items-center justify-center rounded-md overflow-hidden">
     
@@ -56,63 +79,99 @@ import iit from '../images/IITB-logo.png';
       </ul>
      
     </div> -->
-        <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
-          <div class="row-span-1">
-            <div class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row">
-              <div class="dates items-center" style="color:#e7dacb">
-                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Registrations are in Progress -</strong></p> --> 
-                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Registrations are closed -</strong></p>
-                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"><strong> - Last date of submission -</strong></p>
-                <p class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl"> 23 June 2024</p>                
-                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Last date of submission -</strong></p> -->
-                <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"> 15 May 2024</p> -->
-                
-              </div>
-            </div>
+      <div class="grid grid-rows-4 sm:grid-rows-4 pt-4">
+        <div class="row-span-1">
+          <div
+            class="flex items-center justify-center flex-col gap-3 min-[500px]:flex-row"
+          >
+            <div class="dates items-center" style="color:#e7dacb">
+              <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Registrations are in Progress -</strong></p> -->
+              <p
+                class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"
+              >
+                <strong> - Registrations are closed -</strong>
+              </p>
+              <p
+                class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl text-center"
+              >
+                <strong> - Last date of submission -</strong>
+              </p>
+              <p
+                class="important-date flex items-center justify-center text-2xl md:text-center lg:text-2xl"
+              >
+                23 June 2024
+              </p>
+              <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"><strong> - Last date of submission -</strong></p> -->
+              <!-- <p class="important-date flex items-center justify-center text-2xl md:text-left lg:text-2xl"> 15 May 2024</p> -->
             </div>
           </div>
         </div>
-          
-      
-   
-
-    <main class="lg:pl-[25rem] ">
-     
-      <!-- <div class="mx-auto px-0 sm:px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">   -->
-        <div class="flex items-end justify-end">  
-         
-<nav class="float-end mb-3 pb-2">
-  <div class="mx-auto px-4 lg:px-16 pt-4 max-w-none xl:ml-0 xl:mr-[0rem] ">
-      <button class='inline-flex items-center justify-center md:hidden' data-collapse-toggle="main-navigation" type="button" aria-controls="main-navigation" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full items-end md:block menu-item" id="main-navigation">
-      <ul class="menu items-end justify-end bebas-neue-regular">
-        {
-          navLinks.map((link) => {
-            const { label, href } = link;
-
-            return (
-              <li>
-                <a class="nav-link text-brown-300 hover:text-red-600 transition duration-300" href={href}>{label}</a>
-              </li>
-            );
-          })
-        }
-      </ul>
-      
+      </div>
     </div>
-  </div>
-</nav>
-</div>
-      
-  <!-- </div> -->
 
-    <div class="mx-auto px-4 lg:px-16 max-w-none xl:ml-0 xl:mr-[0rem]"
-    transition:animate={slide({ duration: '0.4s' })}>
+    <main class="lg:pl-[25rem]">
+      <!-- <div class="mx-auto px-0 sm:px-4 lg:px-16 py-8 max-w-none xl:ml-0 xl:mr-[0rem]">   -->
+      <div class="flex items-end justify-end">
+        <nav class="float-end mb-3 pb-2">
+          <div
+            class="mx-auto px-4 lg:px-16 pt-4 max-w-none xl:ml-0 xl:mr-[0rem]"
+          >
+            <button
+              class="inline-flex items-center justify-center md:hidden"
+              data-collapse-toggle="main-navigation"
+              type="button"
+              aria-controls="main-navigation"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"></path>
+              </svg>
+            </button>
+            <div
+              class="hidden w-full items-end md:block menu-item"
+              id="main-navigation"
+            >
+              <ul class="menu items-end justify-end bebas-neue-regular">
+                {
+                  navLinks.map((link) => {
+                    const { label, href } = link;
+
+                    return (
+                      <li>
+                        <a
+                          class="nav-link text-brown-300 hover:text-red-600 transition duration-300"
+                          href={href}
+                        >
+                          {label}
+                        </a>
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- </div> -->
+
+      <div
+        class="mx-auto px-4 lg:px-16 max-w-none xl:ml-0 xl:mr-[0rem]"
+        transition:animate={slide({ duration: "0.4s" })}
+      >
         <slot />
       </div>
     </main>
@@ -124,7 +183,6 @@ import iit from '../images/IITB-logo.png';
     margin-bottom: 5px;
     display: inline-block;
     font-size: larger;
-
   }
 
   ul.menu li {
@@ -137,70 +195,63 @@ import iit from '../images/IITB-logo.png';
 
   @media only screen and (max-width: 600px;) {
     nav,
-  ul {
-    display:block;
-  }
+    ul {
+      display: block;
+    }
 
-  ul.menu li {
-    display:block;
+    ul.menu li {
+      display: block;
+    }
   }
+  ul.menu li a {
+    text-decoration: none;
+    color: #6c5353;
   }
-  ul.menu li a{
-  text-decoration: none;
-  color:#6c5353;
-}
-ul.menu li:hover{
-color: red;
-/* background-color: purple; */
+  ul.menu li:hover {
+    color: red;
+    /* background-color: purple; */
   }
-ul.menu li a:hover{
-  color:red;
-}
-.menu-item a.active{
-  color:#f70000 !important;
-  /* background-color: blue; */
-}
-ul.menu li:last-child{  
-  border-right: none;
-}
-/* ul.menu li:hover, */
-/* a.active {color: aqua;} */
-ul.menu li a.active{
-  color:#f70000;
-}
+  ul.menu li a:hover {
+    color: red;
+  }
+  .menu-item a.active {
+    color: #f70000 !important;
+    /* background-color: blue; */
+  }
+  ul.menu li:last-child {
+    border-right: none;
+  }
+  /* ul.menu li:hover, */
+  /* a.active {color: aqua;} */
+  ul.menu li a.active {
+    color: #f70000;
+  }
 </style>
 
 <script>
- 
- document.addEventListener('astro:page-load', () => {
-if(window.location.hash){
-var currentUrl = window.location.pathname.replace(/\/+$/, '') + window.location.hash.replace(/\/+$/, '');
-}
-else{
-
-  var currentUrl = window.location.pathname.replace(/\/+$/, '');
-}
-
-
-  var menuItems = document.querySelectorAll('.nav-link');
-
-console.log(currentUrl);
-  menuItems.forEach(function(item) {
-   
-    var menuItemUrl = item.getAttribute('href');
-console.log(menuItemUrl);
-    // Check if the current URL matches the menu item's href
-    if (currentUrl === menuItemUrl) {
-      // Add the 'active' class to the matching menu item
-      item.classList.add('active');
+  document.addEventListener("astro:page-load", () => {
+    if (window.location.hash) {
+      var currentUrl =
+        window.location.pathname.replace(/\/+$/, "") +
+        window.location.hash.replace(/\/+$/, "");
     } else {
-      // Remove the 'active' class from other menu items
-      item.classList.remove('active');
+      var currentUrl = window.location.pathname.replace(/\/+$/, "");
     }
+
+    var menuItems = document.querySelectorAll(".nav-link");
+
+    console.log(currentUrl);
+    menuItems.forEach(function (item) {
+      var menuItemUrl = item.getAttribute("href");
+      console.log(menuItemUrl);
+      // Check if the current URL matches the menu item's href
+      if (currentUrl === menuItemUrl) {
+        // Add the 'active' class to the matching menu item
+        item.classList.add("active");
+      } else {
+        // Remove the 'active' class from other menu items
+        item.classList.remove("active");
+      }
+    });
   });
-
- });
-
-
-
 </script>

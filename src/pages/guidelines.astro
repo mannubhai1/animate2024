@@ -1,109 +1,158 @@
 ---
-import Main from '../layouts/main.astro';
-import Folder_jpg from '../images/folder_1.png' 
+import Main from "../layouts/main.astro";
+import Folder_jpg from "../images/folder_1.png";
+
+const guidelinesContent = await Astro.glob("../content/guidelinesPage/*.md");
 ---
 
-
 <Main>
-        <section id="guidelines">
+  <section id="guidelines">
     <div class="container py-3 grid grid-cols-1 sm:grid-cols-4 gap-4">
-          <!-- 1/4 Width Column -->
-          <!-- <div class="items-center  justify-center col-span-1 bg-gray-300 p-4" style="text-align: center;">
-            <img src=""/>
-            <h1 class="section-title"> Guidelines and Submissions</h1><br />
-    <div>Submit animation at <a target="_blank" class="hover:text-red-400 text-red-700" href=" https://learn.fossee.in">https://learn.fossee.in</a>.</div>
-    <img class="logos" src={Folder_jpg.src} alt="regi" decoding="async" />
-        </div> -->
-        <!-- 3/4 Width Column -->
-        <div class="col-span-5 p-4">
-            
-                <h1 class="section-title  text-4xl pb-3">Submission Guidelines
-                </h1>
-                <ul style="list-style: circle;" class="text-xl  playfair-display-normal ">
-                    
-                        <li>The team lead have to submit the animations at <a target="_blank" class="hover:text-red-400 text-red-700"  href="https://learn.fossee.in" target="_blank">https://learn.fossee.in.</a></li>
-                        <li>The login instructions have been emailed to the team leads.</li>
-                                <li>Reach us at info[at]fossee[dot] in case you did not receive the login instructions.</li>
-                        </ul>
-                        <h1 class="section-title text-4xl pb-3">Properties of animation:
-                        </h1>
-                        <ul style="list-style: circle;" class="text-xl  playfair-display-normal ">
-                            
-                            <li>Software for creating the animation - Synfig Studio</li>
-                            <li>Animation duration - <span class="text-2xl text-red-700">3 minutes or less</span></li>
-                            <li>Minimum render setting quality at <span class="text-2xl text-red-700">8</span></li>
-                            <li>Minimum resolution - <span class="text-2xl text-red-700">720 x 480 px</span></li>
-                            <li>Frame rate - <span class="text-2xl text-red-700">24 fps</span></li>
-                            </ul>
-                            <h1 class="section-title text-4xl pb-3">Preparation for submission:
-                            </h1>
-                            <ul style="list-style: circle;" class="text-xl  playfair-display-normal ">
-                                
-                               
-                                    <li>Create a folder with the name of your Team-ID.</li>
-                                    <li>The folder should consist of the following files:
-                                    <ul style="list-style: square;" class="ml-5">
-                                    <li>Source files generated in Synfig Studio - .sifz/.sif</li>
-                                    <li>The video output (Avi/Mov/Fla/Ogg/Mp4)</li>
-                                    <li>Source files of artwork, illustrations, images, <br />editing files, fonts etc.</li>
-                                    </ul>
-                                    </li>
-                                    <li>Compress the folder and upload in zip format only.</li>
-                                    <li>The last date of submission is <span class="text-blue-800 text-3xl">20 May 2024 </span> till midnight. The participants can modify their submission anytime within this deadline.</li>
-                                    </ul>
-                                    <h1 class="section-title text-4xl pb-3">Steps to submit animation
-                                    </h1>
-                                    <ul style="list-style: circle;" class="text-xl  playfair-display-normal ">
-                                        
-                                       
-                                      <li>Go to <a target="_blank" class="hover:text-red-400 text-red-700"  href="https://learn.fossee.in">https://learn.fossee.in</a></li>
-                                      <li>Enter the username and password as received over mail and click on "Log in".</li>
-                                      <li>After logging in for the first time, you will be prompted to update the password.</li>
-                                      <li>Click on the <span class="hover:text-red-400 text-red-700">"Animate 2024"</span> Course available in the left panel of your dashboard.</li>
-                                      <li>Scroll down and go to the "Animation Submission Upload" section.</li>
-                                      <li>Go to "Click here to add your submission" to submit your files for the hackathon.</li>
-                                      <li>To see the steps to upload your animation, please watch <a href="https://youtu.be/3MrEhbK7g3o" target="_blank" class="text-red-700 hover:text-red-400">this</a> video.</li>
-                                      </ul>
-          
-        </div>
-      
-      
-      </div>
-
-
-      <div class="container grid grid-cols-1 sm:grid-cols-4 gap-4">
-        <!-- 1/4 Width Column -->
-        <!-- <div class="items-center  justify-center col-span-1 bg-gray-300 p-4" style="text-align: center;">
-          <img src=""/>
-          <h1 class="section-title">Evaluation and Winner/Result</h1>
-          <div>Click here to see 
-            Successful participant and 
-            winner’s list.</div>
-          
-      
-      </div> -->
       <!-- 3/4 Width Column -->
       <div class="col-span-5 p-4">
-          
-          <h1 class="section-title text-4xl pb-3">Evaluation of animation</h1>
-          <ul style="list-style: circle;"  class="text-xl  playfair-display-normal ">
-<li>Submitted animations will go through the Technical Judgment round. The eligible animations will go to the next round of Creative Judgment.</li>
-<li>Technical and Creative scores will be added to declare the final winners.</li>
-<li>All the submissions which pass the Technical Judgment round will get a Completion certificate for the hackathon.</li>
-</ul>
-<p class="text-xl  playfair-display-normal "><span class="text-red-700 text-2xl">Note:</span> The participants are free to interpret the stories/ use creativity according to the current situations happening across the world.</p>
-<p class="text-2xl  playfair-display-normal pt-3">The following will result in the rejection of the submissions:</p>
-<ul style="list-style: circle;"  class="text-xl  playfair-display-normal ">
-<li>Using proprietary software to create the animation.</li>
-<li>Partial submission of files mentioned in the Submission checklist.</li>
-<li>Any form of plagiarism.</li>
-<li>Narration in any language other than the scheduled 22 Indian languages.</li>
-<li>Content depicting violence/abuse/improper use of illustration/nudity &amp; sexuality/hate towards any specific religion.</li>
-</ul>
-        
+        <h1 class="section-title text-4xl pb-3">Submission Guidelines</h1>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>
+            The team lead have to submit the animations at <a
+              target="_blank"
+              class="hover:text-red-400 text-red-700"
+              href="https://learn.fossee.in"
+              target="_blank">https://learn.fossee.in.</a
+            >
+          </li>
+          <li>The login instructions have been emailed to the team leads.</li>
+          <li>
+            Reach us at info[at]fossee[dot] in case you did not receive the
+            login instructions.
+          </li>
+        </ul>
+        <h1 class="section-title text-4xl pb-3">Properties of animation:</h1>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>Software for creating the animation - Synfig Studio</li>
+          <li>
+            Animation duration - <span class="text-2xl text-red-700"
+              >3 minutes or less</span
+            >
+          </li>
+          <li>
+            Minimum render setting quality at <span
+              class="text-2xl text-red-700">8</span
+            >
+          </li>
+          <li>
+            Minimum resolution - <span class="text-2xl text-red-700"
+              >720 x 480 px</span
+            >
+          </li>
+          <li>
+            Frame rate - <span class="text-2xl text-red-700">24 fps</span>
+          </li>
+        </ul>
+        <h1 class="section-title text-4xl pb-3">Preparation for submission:</h1>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>Create a folder with the name of your Team-ID.</li>
+          <li>
+            The folder should consist of the following files:
+            <ul style="list-style: square;" class="ml-5">
+              <li>Source files generated in Synfig Studio - .sifz/.sif</li>
+              <li>The video output (Avi/Mov/Fla/Ogg/Mp4)</li>
+              <li>
+                Source files of artwork, illustrations, images, <br />editing
+                files, fonts etc.
+              </li>
+            </ul>
+          </li>
+          <li>Compress the folder and upload in zip format only.</li>
+          <li>
+            The last date of submission is <span class="text-blue-800 text-3xl"
+              >20 May 2024
+            </span> till midnight. The participants can modify their submission anytime
+            within this deadline.
+          </li>
+        </ul>
+        <h1 class="section-title text-4xl pb-3">\ Steps to submit animation</h1>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>
+            Go to <a
+              target="_blank"
+              class="hover:text-red-400 text-red-700"
+              href="https://learn.fossee.in">https://learn.fossee.in</a
+            >
+          </li>
+          <li>
+            Enter the username and password as received over mail and click on
+            "Log in".
+          </li>
+          <li>
+            After logging in for the first time, you will be prompted to update
+            the password.
+          </li>
+          <li>
+            Click on the <span class="hover:text-red-400 text-red-700"
+              >"Animate 2024"</span
+            > Course available in the left panel of your dashboard.
+          </li>
+          <li>
+            Scroll down and go to the "Animation Submission Upload" section.
+          </li>
+          <li>
+            Go to "Click here to add your submission" to submit your files for
+            the hackathon.
+          </li>
+          <li>
+            To see the steps to upload your animation, please watch <a
+              href="https://youtu.be/3MrEhbK7g3o"
+              target="_blank"
+              class="text-red-700 hover:text-red-400">this</a
+            > video.
+          </li>
+        </ul>
       </div>
-    
-    
     </div>
-</section>
+
+    <div class="container grid grid-cols-1 sm:grid-cols-4 gap-4">
+      <!-- 3/4 Width Column -->
+      <div class="col-span-5 p-4">
+        <h1 class="section-title text-4xl pb-3">Evaluation of animation</h1>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>
+            Submitted animations will go through the Technical Judgment round.
+            The eligible animations will go to the next round of Creative
+            Judgment.
+          </li>
+          <li>
+            Technical and Creative scores will be added to declare the final
+            winners.
+          </li>
+          <li>
+            All the submissions which pass the Technical Judgment round will get
+            a Completion certificate for the hackathon.
+          </li>
+        </ul>
+        <p class="text-xl playfair-display-normal">
+          <span class="text-red-700 text-2xl">Note:</span> The participants are free
+          to interpret the stories/ use creativity according to the current situations
+          happening across the world.
+        </p>
+        <p class="text-2xl playfair-display-normal pt-3">
+          The following will result in the rejection of the submissions:
+        </p>
+        <ul style="list-style: circle;" class="text-xl playfair-display-normal">
+          <li>Using proprietary software to create the animation.</li>
+          <li>
+            Partial submission of files mentioned in the Submission checklist.
+          </li>
+          <li>Any form of plagiarism.</li>
+          <li>
+            Narration in any language other than the scheduled 22 Indian
+            languages.
+          </li>
+          <li>
+            Content depicting violence/abuse/improper use of illustration/nudity
+            &amp; sexuality/hate towards any specific religion.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </Main>

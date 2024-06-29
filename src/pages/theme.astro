@@ -1,68 +1,61 @@
 ---
-import Main from '../layouts/main.astro';
+import Main from "../layouts/main.astro";
+const themeContent = await Astro.glob("../content/themePage/*.md");
 ---
 
-
 <Main>
-    <section>
-
-        <div class="py-3">
-            <!-- 1/4 Width Column -->
-            <!-- <div class="col-span-1 bg-gray-300 p-4">
-                <img src=""/>
-                <h1 class="section-title">Celebrating India's Innovation</h1>
-                
-                
-            </div> -->
-            <!-- 3/4 Width Column -->
-            <div class="col-span-1 p-4">
-                
-                <h1 class="section-title text-4xl pb-3">Theme of Hackathon - 2024
-                    
-                    
-                </h1>
-                <!-- <div class="leading-9 ">
-                    <p class="text-2xl">Tell Your Story/Present your story</p>
-                    <div class="md:text-xl text-sm playfair-display-normal ">
-                       <p class="py-3"> which has an element of innovation, through an animation. You can explain the story with the problem /cause, how did you handle it and what was the outcome of it. Some of the examples for the storylines are as follows:</p>
-                       <ol class="text-orange-900 leading-loose list-decimal mx-2">
-<li><h1>Any incident/person which gives you inspiration. </h1> </li>
-<li><h1>Your memorable moment which changed your life/perspective/morals</h1></li>
-<li><h1>Any innovation which you feel should be told</h1> </li>
-                           
-                           
-                           
-                        </ol>
-                    </div>
-                    
-                </div>
-                
-            </div> -->
-            <div class="leading-loose">
-            <p class="text-xl playfair-display-normal">We invite participants to submit animation videos, no longer than 3 minutes, on the theme "Celebrating India's Innovation," where they showcase a problem, the action taken, and the innovative solution presented. Whether it's a simple yet ingenious solution found in your grandmother's kitchen or a groundbreaking innovation that has captured the nation's attention, we want to celebrate it all.</p>
-            <p class="text-xl playfair-display-normal pt-2">Please find below a list of examples of innovation:</p>
-            <ol class="text-orange-900 leading-loose list-decimal mx-2 md:text-xl text-sm playfair-display-normal pt-3">
-                <li>A farmer's inventive irrigation system that maximizes crop yield.</li>
-                <li>A student's eco-friendly solution to a local environmental challenge.</li>
-                <li>A startup's groundbreaking technology revolutionizing healthcare accessibility.</li>
-                <li><p>A traditional artisan's adaptation of age-old techniques for modern markets.</p><p>And many, many more.</p></li>
-             </ol>
-            <p class="md:text-xl text-sm playfair-display-normal pt-3">Let's come together to celebrate India's rich culture of innovation and showcase the ingenuity of our nation. Embrace the challenge, unleash your creativity, and be a part of this exciting journey to celebrate India's innovation!</p>
+  <section>
+    <div class="py-3">
+      <div class="col-span-1 p-4">
+        <h1 class="section-title text-4xl pb-3">Theme of Hackathon - 2024</h1>
+        <div class="leading-loose">
+          {
+            themeContent.map((content) => {
+              const Content = content.Content;
+              return <Content />;
+            })
+          }
         </div>
-        </div>
-       
-       
-        </section>
-        <style>
-            tr,td{
-                border: 1px solid black;
-                padding: 10px;
-            }
-            @media  (min-width: 600px;) {
-                tr,td{
-                    
-                    padding: auto;
-                }
-            }
-        </style>
+      </div>
+    </div>
+    <style>
+      tr,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      @media (min-width: 600px;) {
+        tr,
+        td {
+          padding: auto;
+        }
+      }
+    </style>
+  </section>
 </Main>
+
+<script>
+  const theme = document.querySelector(".leading-loose");
+  const themeP = theme.querySelectorAll("p");
+  const themeOL = theme.querySelector("ol");
+  const themeLI = theme.querySelectorAll("ol li");
+  themeP[0].classList.add("text-xl", "playfair-display-normal");
+  themeP[1].classList.add("text-xl", "playfair-display-normal", "pt-2");
+  themeP[2].classList.add(
+    "md:text-xl",
+    "text-sm",
+    "playfair-display-normal",
+    "pt-3"
+  );
+
+  themeOL.classList.add(
+    "text-orange-900",
+    "leading-loose",
+    "list-decimal",
+    "mx-2",
+    "md:text-xl",
+    "text-sm",
+    "playfair-display-normal",
+    "pt-3"
+  );
+</script>
