@@ -4,7 +4,7 @@ import Main from '../layouts/main.astro';
 ---
 
 <Main title="Results">
-    <div class="overflow-x">
+    <div class="overflow-x mt-5 pt-5">
 
         <table class="w-full overflow-scroll text-xl text-center rtl:text-right">
             <thead class="text-2xl">
@@ -16,7 +16,7 @@ import Main from '../layouts/main.astro';
                     <th>File Name</th>
                 </tr>
             </thead>
-            <tbody class="border-collapse border border-slate-400 playfair-display-normal">
+            <tbody class="border-collapse border border-slate-400">
                 <tr>
                     <td colspan="1" rowspan="3">1</td>
                     <td colspan="1" rowspan="3">
@@ -33,50 +33,35 @@ import Main from '../layouts/main.astro';
         <td>Beehive cooler</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-116.mp4" target="_blank">Animate24-116.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+   
     <tr>
         <td>2</td>
         <td>School</td>
         <td>Clean City Story Using Solar Energy</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-007.mp4" target="_blank">Animate24-007.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+
     <tr>
         <td>3</td>
         <td>Regional Language</td>
         <td>Marine Garbage Collector</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-008.mp4" target="_blank">Animate24-008.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+
     <tr>
         <td>4</td>
         <td>Environmental Relevance</td>
         <td>Urban Herbal Planting</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-070.mp4" target="_blank">Animate24-070.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+  
     <tr>
         <td>5</td>
         <td>Social Relevance</td>
         <td>Solar Panel Importance</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-041.mp4" target="_blank">Animate24-041.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+  
     <tr>
         <td colspan="1" rowspan="2">6</td>
         <td colspan="1" rowspan="2">
@@ -89,10 +74,7 @@ import Main from '../layouts/main.astro';
         <td>Plastic Road</td>
         <td><a class="in-cell-link" href="https://static.fossee.in/focal/ANIMATE2024/Animate24-042.mp4" target="_blank">Animate24-042.mp4</a></td>
     </tr>
-    <tr>
-        <td></td>
-       
-    </tr>
+  
     <tr>
         <td colspan="1" rowspan="11">7</td>
         <td colspan="1" rowspan="11">
@@ -147,6 +129,16 @@ import Main from '../layouts/main.astro';
 
 </Main>
 <style>
+    table{
+        box-shadow: 0px 5px 58px 0px rgba(36, 80, 80, 0.7);
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    table:hover{
+        box-shadow: none;
+        /* scale: 1.1; */
+    }
 a {
   /* background:; */
   color: rgb(255, 0, 149);
