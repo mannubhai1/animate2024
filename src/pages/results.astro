@@ -4,135 +4,298 @@ import Main from '../layouts/main.astro';
 ---
 
 <Main title="Results">
+  
+
+<div class="tabs">
+  <div class="tab active" data-tab="0">Winners</div>
+  <div class="tab" data-tab="1">Consolation</div>
+  <!-- <div class="tab" data-tab="2">Tab 3</div> -->
+</div>
+
+<div class="tab-content">
+  <div class="tab-panel active" id="tab-0">
     <div class="overflow-x mt-5 pt-5 pb-5 mb-5">
 
-        <table class="table-auto w-full overflow-scroll text-xl rtl:text-right border border-spacing-2 ">
-            <thead class="text-2xl">
-                
-                <tr>
-                    <th>Sr. No.</th>
-                    <th>Category of Winners</th>
-                    <th>Winner Names</th>
-                    <th>Video Link</th>
-                </tr>
-            </thead>
-            <tbody class="border border-slate-400 pl-2 m-2">
+      <table class="table-auto w-full overflow-scroll text-xl rtl:text-right border border-spacing-2 ">
+          <thead class="text-2xl">
+              
               <tr>
-                <td>1</td>
-                <td>First Winner</td>
-                <td>Karunya.G.S, Harshini.V.M, Deevith.M, Sanjay.K<br />Velalar college of engineering and technology, Thindal</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-062.mp4" target="_blank">Forest Protection</a></td>
-                </tr>
-                <tr>
-                <td>2</td>
-                <td>Second Winner</td>
-                <td>Raktima Chattopadhyay<br />Rahul International school</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-014.mp4" target="_blank">Street Play (Paath Khela)</a></td>
-                </tr>
-                <tr>
-                <td>3</td>
-                <td>Third Winner</td>
-                <td>Seikh Nabab Uddin, Vinayak Kumar, Soumik Neogi, A.R. Jahnavi<br />Dr. B.C. Roy Engineering College</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-116.mp4" target="_blank">Beehive cooler</a></td>
-                </tr>
-                <tr>
-                <td>4</td>
-                <td>Best School Submission</td>
-                <td>Tatwart, Navya, Divya, Shreya<br />smata faoundaion</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-007.mp4" target="_blank">Clean City Story Using Solar Energy</a></td>
-                </tr>
-                <tr>
-                <td>5</td>
-                <td>Regional Language</td>
-                <td>Kabir Chauhan, Gayatri Swain, Arun, Sachina<br />Dronacharya college of engineering</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-008.mp4" target="_blank">Marine Garbage Collector</a></td>
-                </tr>
-                <tr>
-                <td>6</td>
-                <td>Environmental Relevance</td>
-                <td>Ragini<br />Srishti Manipal</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-070.mp4" target="_blank">Urban Herbal Planting</a></td>
-                </tr>
-                <tr>
-                <td>7</td>
-                <td>Social Relevance</td>
-                <td>Nithya Shree.E, Priya Keerthana.A, Sivaharshavardhini.T, Nandha Deepa.S<br />Velalar college of engineering and technology Thindal</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-041.mp4" target="_blank">Solar Panel Importance</a></td>
-                </tr>
-                <tr>
-                <td>8</td>
-                <td>Innovation</td>
-                <td>Swetha.P , Merlyn.A.S, Tharun.P, Yaswanth.R<br />Velalar college of engineering and technology Thindal</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-064.mp4" target="_blank">Medical Aid Innovation Story</a></td>
-                </tr>
-                <tr>
-                <td>9</td>
-                <td>Innovation</td>
-                <td>M.M.Rithika, K.Rithika, S.S.Subrajaa, M.R.Thanusri<br />Velalar College of Engineering and Technology</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-042.mp4" target="_blank">Plastic Road</a></td>
-                </tr>
-                <tr>
-                <td>10</td>
-                <td colspan="1" rowspan="11">
-                <div>Consolation</div>
-                </td>
-                <td>Amisha Kumari, Rashi, Rabiya Rahmani, Ganesh Kumar<br />Purnea college of engineering, purnea, bihar.</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-065.mp4" target="_blank">Eco-friendly challenge</a></td>
-                </tr>
-                <tr>
-                <td>11</td>
-                <td>Brindha.V.C, Lalithya.T, Elanngo.M, Bhavadharani.S<br />Velalar college of engineering and technology Thindal</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-072.mp4" target="_blank">NAVIC</a></td>
-                </tr>
-                <tr>
-                <td>12</td>
-                <td>Anirudh Srinivasan.G.S, Arvind.B, Arun Aravindh.R, Prasanth.S<br />Sri Sairam Engineering College</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-100.mp4" target="_blank">AWS Water Solutions</a></td>
-                </tr>
-                <tr>
-                <td>13</td>
-                <td>Balasurya, Suman, Florance Vimal, Harish Sanjay<br />Sri Eshwar College of Engineering</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-051.mp4" target="_blank">Innovative India (Celebration of Creativity)</a></td>
-                </tr>
-                <tr>
-                <td>14</td>
-                <td>Vismita.A, Preethiga.M, Yaswanth Kumar.L, Monish.S<br />Velalar College of Engineering and Technology</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-046.mp4" target="_blank">Plastic life</a></td>
-                </tr>
-                <tr>
-                <td>15</td>
-                <td>Krishna Priya. A, Indhu. J, Vani. I<br />Vivekanandha college of technology for women</td>
-                <td><a href="https://youtu.be/SUPvwVf6Dzc" target="_blank">The need of Education and Medication</a></td>
-                </tr>
-                <tr>
-                <td>16</td>
-                <td>Lavanya Shree.V<br />Chevalier T. Thomas Elizabeth College for Women</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-059.avi" target="_blank">Mitti Cool Fridge</a></td>
-                </tr>
-                <tr>
-                <td>17</td>
-                <td>Rajwardhan Shitole, Shubham Kale, Pradip Nikam, Rushikesh Taradgaonkar<br />Dr. D. Y. Patil ACS college Pimpri, Pune</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-037.mp4" target="_blank">Ganimi Kawa (Innovation in War)</a></td>
-                </tr>
-                <tr>
-                <td>18</td>
-                <td>Harivignesh.T, Abinayabharathi.N.C, Dharanikumar.K, Dharshini.B<br />Velalar College of Engineering And Technology</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-040.mp4" target="_blank">Defense of India</a></td>
-                </tr>
-                <tr>
-                <td>19</td>
-                <td>Vidhya.V<br />Vivekananda College of Technology for Women</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-082.mp4" target="_blank">Digital knowledge</a></td>
-                </tr>
-                <tr>
-                <td>20</td>
-                <td>S.Hemavathi<br />Vivekanandha college of technology for womenn</td>
-                <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-084.mp4" target="_blank">Plastic free farming</a></td>
-                </tr>
-                    
+                  <th>Sr. No.</th>
+                  <th>Category of Winners</th>
+                  <th>Winner Names</th>
+                  <th>Video Link</th>
+              </tr>
+          </thead>
+          <tbody class="border border-slate-400 pl-2 m-2">
+            <tr>
+              <td>1</td>
+              <td>First Winner</td>
+              <td>Karunya.G.S, Harshini.V.M, Deevith.M, Sanjay.K<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-062.mp4" target="_blank">Forest Protection</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>2</td>
+              <td>Second Winner</td>
+              <td>Raktima Chattopadhyay<br /><span style="color: #ff00ff;">(Rahul International School, Thane)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-014.mp4" target="_blank">Street Play (Paath Khela)</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>Third Winner</td>
+              <td>Seikh Nabab Uddin, Vinayak Kumar, Soumik Neogi, A.R. Jahnavi<br /><span style="color: #ff00ff;">(Dr. B.C. Roy Engineering College, Durgapur)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-116.mp4" target="_blank">Beehive cooler</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>4</td>
+              <td>Best School Submission</td>
+              <td>Tatwarth Panchawatkar, Navya, Divya, Shreya<br /><span style="color: #ff00ff;">(Samta Foundation, Mumbai)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-007.mp4" target="_blank">Clean City Story Using Solar Energy</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>5</td>
+              <td>Regional Language</td>
+              <td>Kabir Chauhan, Gayatri Swain, Arun, Sachina<br /><span style="color: #ff00ff;">(Dronacharya College of Engineering, Gurugram)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-008.mp4" target="_blank">Marine Garbage Collector</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>6</td>
+              <td>Environmental Relevance</td>
+              <td>Ragini<br /><span style="color: #ff00ff;">(Srishti Manipal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-070.mp4" target="_blank">Urban Herbal Planting</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>7</td>
+              <td>Social Relevance</td>
+              <td>Nithya Shree.E, Priya Keerthana.A, Sivaharshavardhini.T, Nandha Deepa.S<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-041.mp4" target="_blank">Solar Panel Importance</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>8</td>
+              <td>Innovation</td>
+              <td>Swetha.P , Merlyn.A.S, Tharun.P, Yaswanth.R<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-064.mp4" target="_blank">Medical Aid Innovation Story</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>9</td>
+              <td>Innovation</td>
+              <td>M.M.Rithika, K.Rithika, S.S.Subrajaa, M.R.Thanusri<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-042.mp4" target="_blank">Plastic Road</a></td>
+              </tr>
+              
+              <!-- <tr>
+              <td>10</td>
+              <td colspan="1" rowspan="11">
+              <div>Consolation</div>
+              </td>
+              <td>Amisha Kumari, Rashi, Rabiya Rahmani, Ganesh Kumar<br />Purnea college of engineering, purnea, bihar.</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-065.mp4" target="_blank">Eco-friendly challenge</a></td>
+              </tr>
+              <tr>
+              <td>11</td>
+              <td>Brindha.V.C, Lalithya.T, Elanngo.M, Bhavadharani.S<br />Velalar college of engineering and technology Thindal</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-072.mp4" target="_blank">NAVIC</a></td>
+              </tr>
+              <tr>
+              <td>12</td>
+              <td>Anirudh Srinivasan.G.S, Arvind.B, Arun Aravindh.R, Prasanth.S<br />Sri Sairam Engineering College</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-100.mp4" target="_blank">AWS Water Solutions</a></td>
+              </tr>
+              <tr>
+              <td>13</td>
+              <td>Balasurya, Suman, Florance Vimal, Harish Sanjay<br />Sri Eshwar College of Engineering</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-051.mp4" target="_blank">Innovative India (Celebration of Creativity)</a></td>
+              </tr>
+              <tr>
+              <td>14</td>
+              <td>Vismita.A, Preethiga.M, Yaswanth Kumar.L, Monish.S<br />Velalar College of Engineering and Technology</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-046.mp4" target="_blank">Plastic life</a></td>
+              </tr>
+              <tr>
+              <td>15</td>
+              <td>Krishna Priya. A, Indhu. J, Vani. I<br />Vivekanandha college of technology for women</td>
+              <td><a href="https://youtu.be/SUPvwVf6Dzc" target="_blank">The need of Education and Medication</a></td>
+              </tr>
+              <tr>
+              <td>16</td>
+              <td>Lavanya Shree.V<br />Chevalier T. Thomas Elizabeth College for Women</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-059.avi" target="_blank">Mitti Cool Fridge</a></td>
+              </tr>
+              <tr>
+              <td>17</td>
+              <td>Rajwardhan Shitole, Shubham Kale, Pradip Nikam, Rushikesh Taradgaonkar<br />Dr. D. Y. Patil ACS college Pimpri, Pune</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-037.mp4" target="_blank">Ganimi Kawa (Innovation in War)</a></td>
+              </tr>
+              <tr>
+              <td>18</td>
+              <td>Harivignesh.T, Abinayabharathi.N.C, Dharanikumar.K, Dharshini.B<br />Velalar College of Engineering And Technology</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-040.mp4" target="_blank">Defense of India</a></td>
+              </tr>
+              <tr>
+              <td>19</td>
+              <td>Vidhya.V<br />Vivekananda College of Technology for Women</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-082.mp4" target="_blank">Digital knowledge</a></td>
+              </tr>
+              <tr>
+              <td>20</td>
+              <td>S.Hemavathi<br />Vivekanandha college of technology for womenn</td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-084.mp4" target="_blank">Plastic free farming</a></td>
+              </tr> -->
+                  
 </tbody>
 </table>
 </div>
+  </div>
+  <!---------------Tab-2------------------->
+    <div class="tab-panel" id="tab-1"> <div class="overflow-x mt-5 pt-5 pb-5 mb-5">
+
+      <table class="table-auto w-full overflow-scroll text-xl rtl:text-right border border-spacing-2 ">
+          <thead class="text-2xl">
+              
+              <tr>
+                  <th>Sr. No.</th>
+                  <th>Category of Winners</th>
+                  <th>Winner Names</th>
+                  <th>Video Link</th>
+              </tr>
+          </thead>
+          <tbody class="border border-slate-400 pl-2 m-2">
+            <tr>
+              <td>1</td>
+              <td colspan="1" rowspan="11">
+              <div>Consolation</div>
+              </td>
+              <td>Amisha Kumari, Rashi, Rabiya Rahmani, Ganesh Kumar<br /><span style="color: #ff00ff;">(Purnea College of Engineering, Purnea, Bihar)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-065.mp4" target="_blank">Eco-friendly challenge</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>2</td>
+              <td>Brindha.V.C, Lalithya.T, Elanngo.M, Bhavadharani.S<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-072.mp4" target="_blank">NAVIC</a></td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>Anirudh Srinivasan.G.S, Arvind.B, Arun Aravindh.R, Prasanth.S<br /><span style="color: #ff00ff;">(Sri Sairam Engineering College, Chennai)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-100.mp4" target="_blank">AWS Water Solutions</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>4</td>
+              <td>Balasurya, Suman, Florance Vimal, Harish Sanjay<br /><span style="color: #ff00ff;">(Sri Eshwar College of Engineering, Coimbatore)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-051.mp4" target="_blank">Innovative India (Celebration of Creativity)</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>5</td>
+              <td>Vismita.A, Preethiga.M, Yaswanth Kumar.L, Monish.S<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-046.mp4" target="_blank">Plastic life</a></td>
+              </tr>
+              <tr>
+              <td>6</td>
+              <td>Krishna Priya. A, Indhu. J, Vani. I<br /><span style="color: #ff00ff;">(Vivekananda College of Technology for Women, Namakkal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-099" target="_blank">The need of Education and Medication</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>7</td>
+              <td>Lavanya Shree.V<br /><span style="color: #ff00ff;">(Chevalier T. Thomas Elizabeth College for Women, Perambur)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-059.avi" target="_blank">Mitti Cool Fridge</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>8</td>
+              <td>Rajwardhan Shitole, Shubham Kale, Pradip Nikam, Rushikesh Taradgaonkar<br /><span style="color: #ff00ff;">(Dr. D. Y. Patil ACS College Pimpri, Pune)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-037.mp4" target="_blank">Ganimi Kawa (Innovation in War)</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>9</td>
+              <td>Harivignesh.T, Abinayabharathi.N.C, Dharanikumar.K, Dharshini.B<br /><span style="color: #ff00ff;">(Velalar College of Engineering and Technology Thindal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-040.mp4" target="_blank">Defense of India</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>10</td>
+              <td>Vidhya.V<br /><span style="color: #ff00ff;">(Vivekananda College of Technology for Women, Namakkal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-082.mp4" target="_blank">Digital knowledge</a></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+              <td>11</td>
+              <td>S.Hemavathi<br /><span style="color: #ff00ff;">(Vivekananda College of Technology for Women, Namakkal)</span></td>
+              <td>
+              <div>
+              <div><a href="https://static.fossee.in/focal/ANIMATE2024/Animate24-084.mp4" target="_blank">Plastic free farming</a></div>
+              </div>
+              </td>
+              </tr>                  
+</tbody>
+</table>
+</div>
+          </div>
+    <!---------------Tab-3------------------->
+  <!-- <div class="tab-panel" id="tab-2">Content for Tab 3</div> -->
+</div>
+
+
+
+   
 
 </Main>
 <style>
@@ -159,6 +322,7 @@ a {
 
 a:hover {
   background-color: #ff5e00;
+  text-decoration:underline;
   color: white;
   
 }
@@ -175,5 +339,55 @@ tr, th,td{
     border: 2px solid rgb(255, 0, 85);
     padding: 5px;
 }
+.tabs {
+    display: flex;
+    cursor: pointer;
+  }
 
+  .tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #f1f1f1;
+  }
+
+  .tab.active {
+    background: #fc0000;
+    color:white;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .tab-content > div {
+    display: none;
+  }
+
+  .tab-content > div.active {
+    display: block;
+  }
 </style>
+<script>
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const activeTab = document.querySelector('.tab.active');
+      const activePanel = document.querySelector('.tab-panel.active');
+      
+      if (activeTab) {
+        activeTab.classList.remove('active');
+      }
+
+      if (activePanel) {
+        activePanel.classList.remove('active');
+      }
+
+      tab.classList.add('active');
+      const tabIndex = tab.getAttribute('data-tab');
+      document.getElementById(`tab-${tabIndex}`).classList.add('active');
+    });
+  });
+</script>
