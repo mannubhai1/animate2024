@@ -1,11 +1,10 @@
 [
   { "label": "About", "href": "/about" },
   { "label": "Theme", "href": "/theme" },
-  { "label": "Register", "href": "/register" },
-  { "label": "Guidelines", "href": "/guidelines" },
+  {"label": "Results", "href": "/results"},
+  {"label": "Awards", "href": "/awards"},
   { "label": "Resources", "href": "/resources" },
   { "label": "Rules", "href": "/rules" },
-  { "label": "Webinar", "href": "/webinar" },
   { "label": "Partners", "href": "/partners" },
   { "label": "Contact", "href": "/contact" },
   { "label": "FAQs", "href": "/contact#faq" }
